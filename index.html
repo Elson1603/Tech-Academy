@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech Academy - Learn to Code</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="nav-container">
+            <div class="logo">Tech<span>Academy</span></div>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#courses">Courses</a></li>
+                    <li><a href="#enrollment">Enroll</a></li>
+                    <li><a href="#workshops">Workshops</a></li>
+                    <li><a href="#" id="loginBtn">Login</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <section class="hero" id="home">
+        <h1>Master Coding Skills That Matter</h1>
+        <p>Join our community of learners and build the technical foundation for your future career in tech.</p>
+        <a href="#enrollment" class="btn">Start Learning Today</a>
+    </section>
+    
+    <div class="container" id="courses">
+        <h2 class="section-title">Our Featured Courses</h2>
+        <div class="features">
+            <div class="feature-card">
+                <div class="feature-card-header">JavaScript Fundamentals</div>
+                <div class="feature-card-body">
+                    <p>Learn the core concepts of modern JavaScript, from basics to advanced patterns.</p>
+                    <div class="course-progress">
+                        <div class="progress-bar" style="width: 85%;"></div>
+                    </div>
+                    <p style="text-align: right; margin-top: 5px; font-size: 0.9rem;">14,586 students enrolled</p>
+                </div>
+            </div>
+            
+            <div class="feature-card">
+                <div class="feature-card-header">React & Redux</div>
+                <div class="feature-card-body">
+                    <p>Build dynamic web applications with React and manage state efficiently with Redux.</p>
+                    <div class="course-progress">
+                        <div class="progress-bar" style="width: 78%;"></div>
+                    </div>
+                    <p style="text-align: right; margin-top: 5px; font-size: 0.9rem;">9,324 students enrolled</p>
+                </div>
+            </div>
+            
+            <div class="feature-card">
+                <div class="feature-card-header">Node.js Backend</div>
+                <div class="feature-card-body">
+                    <p>Create scalable backend systems with Node.js, Express, and MongoDB.</p>
+                    <div class="course-progress">
+                        <div class="progress-bar" style="width: 92%;"></div>
+                    </div>
+                    <p style="text-align: right; margin-top: 5px; font-size: 0.9rem;">11,752 students enrolled</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="container" id="enrollment">
+        <h2 class="section-title">Enroll in a Course</h2>
+        <form class="enrollment-form" id="enrollmentForm">
+            <h3 class="form-title">Course Registration</h3>
+            
+            <div class="form-group">
+                <label for="fullName" class="form-label">Full Name</label>
+                <input type="text" id="fullName" class="form-control" placeholder="Enter your full name">
+                <div id="nameError" class="error-message">Please enter your full name</div>
+            </div>
+            
+            <div class="form-group">
+                <label for="email" class="form-label">Email Address</label>
+                <input type="email" id="email" class="form-control" placeholder="Enter your email address">
+                <div id="emailError" class="error-message">Please enter a valid email address</div>
+            </div>
+            
+            <div class="form-group">
+                <label for="phone" class="form-label">Phone Number</label>
+                <input type="tel" id="phone" class="form-control" placeholder="Enter your phone number">
+                <div id="phoneError" class="error-message">Please enter a valid phone number</div>
+            </div>
+            
+            <div class="form-group">
+                <label for="courseSelect" class="form-label">Select Course</label>
+                <select id="courseSelect" class="form-control">
+                    <option value="">-- Select a course --</option>
+                    <option value="js">JavaScript Fundamentals</option>
+                    <option value="react">React & Redux</option>
+                    <option value="node">Node.js Backend</option>
+                    <option value="python">Python for Data Science</option>
+                    <option value="fullstack">Full Stack Web Development</option>
+                </select>
+                <div id="courseError" class="error-message">Please select a course</div>
+            </div>
+            
+            <div class="form-group">
+                <label for="startDate" class="form-label">Preferred Start Date</label>
+                <input type="date" id="startDate" class="form-control">
+                <div id="dateError" class="error-message">Please select a valid start date</div>
+            </div>
+            
+            <button type="submit" class="btn" style="width: 100%;">Register Now</button>
+        </form>
+    </div>
+    
+    <div class="workshop-section" id="workshops">
+        <div class="container">
+            <h2 class="section-title">Upcoming Workshops</h2>
+            <p style="text-align: center; margin-bottom: 2rem;">Join our free online workshops to get a taste of our teaching approach.</p>
+            
+            <div class="workshop-list" id="workshopList">
+                <!-- Workshop items will be generated by JavaScript -->
+            </div>
+            
+            <div class="countdown-timer">
+                <p>Next workshop starts in:</p>
+                <div id="countdown" class="countdown-display">00:00:00</div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="container">
+        <div class="interactive-demo">
+            <h3 class="form-title">JavaScript Interactive Demo</h3>
+            <p>Click or hover over the box below to see JavaScript events in action:</p>
+            
+            <div id="colorBox" class="color-box">
+                Interact with me!
+            </div>
+            
+            <h4 style="margin-top: 2rem;">String Transformation:</h4>
+            <div class="text-input-demo">
+                <input type="text" id="textInput" class="form-control" placeholder="Enter some text to transform...">
+                <button id="transformBtn" class="btn">Transform</button>
+            </div>
+            
+            <div id="transformResults" class="result-panel">
+                <p>Results will appear here...</p>
+            </div>
+        </div>
+        
+        <div class="todo-section">
+            <h3 class="form-title">Study Plan Manager</h3>
+            <p>Keep track of your learning goals and progress:</p>
+            
+            <div class="todo-header">
+                <input type="text" id="taskInput" class="todo-input" placeholder="Enter a new study task...">
+                <button id="addTaskBtn" class="add-task-btn">Add Task</button>
+            </div>
+            
+            <ul id="todoList" class="todo-list">
+                <!-- Tasks will be added here dynamically -->
+            </ul>
+        </div>
+    </div>
+    
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-column">
+                <h3>About TechAcademy</h3>
+                <p>We are dedicated to providing high-quality tech education to students worldwide. Our mission is to empower the next generation of developers.</p>
+                <div class="social-links">
+                    <a href="#"><span>f</span></a>
+                    <a href="#"><span>t</span></a>
+                    <a href="#"><span>in</span></a>
+                    <a href="#"><span>ig</span></a>
+                </div>
+            </div>
+            
+            <div class="footer-column">
+                <h3>Quick Links</h3>
+                <ul class="footer-links">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Courses</a></li>
+                    <li><a href="#">Our Team</a></li>
+                    <li><a href="#">Student Portal</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-column">
+                <h3>Contact Information</h3>
+                <p>123 Tech Street, Innovation District</p>
+                <p>San Francisco, CA 94105</p>
+                <p>Email: info@techacademy.com</p>
+                <p>Phone: (555) 123-4567</p>
+                <div id="currentTime" class="current-time"></div>
+            </div>
+        </div>
+        
+        <div class="copyright">
+            <p>&copy; 2025 TechAcademy. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
