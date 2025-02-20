@@ -192,9 +192,9 @@ enrollmentForm.addEventListener('submit', function(e) {
 
 // ============= Workshop Data =============
 const workshops = [
-    new Workshop('React Workshop', '2025-09-15T14:00:00', 'John Doe', 50),
-    new Workshop('Node.js Basics', '2025-09-20T10:00:00', 'Jane Smith', 30),
-    new Workshop('Python for Beginners', '2025-09-25T15:00:00', 'Alice Johnson', 40)
+    new Workshop('React Workshop', '2025-09-15T14:00:00', 'Ashley Almedia', 50),
+    new Workshop('Node.js Basics', '2025-09-20T10:00:00', 'Serene Dmello', 30),
+    new Workshop('Python for Beginners', '2025-09-25T15:00:00', 'Elson Machado', 40)
 ];
 
 // Display workshop items
